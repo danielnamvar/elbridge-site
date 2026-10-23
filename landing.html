@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Elbridge Group</title>
+<meta name="description" content="The Elbridge Group is a private real estate banking firm providing flexible capital across the stack for complex and time-sensitive situations in the middle and upper middle market.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0B0B0C;
+  --ink:#C9CED3;
+  --grey:#767C83;
+  --rule:#232629;
+  --white:#FFFFFF;
+  --blue:#A9CFE8;        /* light blue — primary accent */
+  --blue-dp:#7FB4D6;     /* deeper tint for hover */
+  --blue-pale:#EEF5FA;   /* wash */
+  --head:'Figtree',system-ui,sans-serif;
+  --display:'Montserrat',system-ui,sans-serif;
+  --body:'Source Sans 3',system-ui,sans-serif;
+  --pad:clamp(24px,6vw,88px);
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+html,body{height:100%}
+body{
+  background:var(--black);color:var(--white);
+  font-family:var(--body);font-weight:400;font-size:1.125rem;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  display:flex;flex-direction:column;min-height:100%;
+}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--blue-dp);outline-offset:4px}
+
+.hero{flex:1 0 auto;display:flex;align-items:center;padding:72px var(--pad)}
+.wrap{max-width:var(--max);margin:0 auto;width:100%}
+
+.brand{
+  font-family:var(--display);font-weight:600;font-size:1rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--white);
+  margin-bottom:clamp(56px,10vh,120px);
+}
+.brand span{color:var(--blue-dp)}
+
+h1{
+  font-family:var(--head);font-weight:600;font-size:2.125rem;line-height:1.08;
+  letter-spacing:-.02em;max-width:17ch;
+}
+h1 em{font-style:normal;color:var(--blue)}
+@media screen and (min-width:768px){h1{font-size:3rem}}
+@media screen and (min-width:1024px){h1{font-size:3.75rem}}
+
+.lede{
+  margin-top:34px;max-width:66ch;color:var(--ink);
+  font-size:1.0625rem;line-height:1.65;
+}
+@media screen and (min-width:1024px){.lede{font-size:1.1875rem}}
+
+.btn{
+  appearance:none;display:inline-block;cursor:pointer;
+  font-family:var(--display);font-size:.8125rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+  border:1px solid var(--blue);background:var(--blue);color:var(--black);
+  border-radius:0;height:42px;line-height:40px;padding:0 26px;margin-top:44px;
+  transition:.2s ease-out;-webkit-font-smoothing:antialiased;
+}
+.btn:hover{background:var(--blue-dp);border-color:var(--blue-dp)}
+
+footer{flex-shrink:0;border-top:1px solid var(--rule);padding:26px var(--pad)}
+.foot{max-width:var(--max);margin:0 auto}
+.copy{font-family:var(--display);font-size:.75rem;letter-spacing:.1em;color:var(--grey)}
+
+@media screen and (max-width:767px){
+  h1 em{white-space:normal}
+  .btn{padding:0 22px}
+}
+</style>
+</head>
+<body>
+
+<main class="hero">
+  <div class="wrap">
+    <div class="brand">Elbridge<span>.</span></div>
+    <h1>Creative capital for <em>complex and time-sensitive</em> situations.</h1>
+    <p class="lede">The Elbridge Group (&ldquo;Elbridge&rdquo;) is a private real estate banking firm specialized in providing flexible capital across the stack for complex and time-sensitive situations in the middle and upper middle market. With decades of collective experience and billions in capital deployed, Elbridge has mastered the ability to swiftly assess transactions and fund with creativity and efficiency.</p>
+    <a class="btn" href="mailto:dnamvar@elbridge.com">Learn More</a>
+  </div>
+</main>
+
+<footer>
+  <div class="foot">
+    <p class="copy">&copy; <span id="yr"></span> The Elbridge Group</p>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
