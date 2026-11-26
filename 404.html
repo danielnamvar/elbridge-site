@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found — The Elbridge Group</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/img/fonts/montserrat-latin-500-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/img/fonts/figtree-latin-400-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/img/fonts/source-serif-4-latin-400-normal.woff2">
+<style>
+  /* Self-hosted, like the main site: a webfont arriving from a CDN after
+     first paint swaps the type and shifts the layout. */
+  @font-face{font-family:'Montserrat';src:url("/img/fonts/montserrat-latin-500-normal.woff2") format('woff2');font-weight:500;font-style:normal;font-display:swap}
+  @font-face{font-family:'Figtree';src:url("/img/fonts/figtree-latin-400-normal.woff2") format('woff2');font-weight:400;font-style:normal;font-display:swap}
+  @font-face{font-family:'Source Serif 4';src:url("/img/fonts/source-serif-4-latin-400-normal.woff2") format('woff2');font-weight:400;font-style:normal;font-display:swap}
+
+  :root{ --forest:#0B0B0C; --teal:#2F7FAE; --teal-lt:#A9CFE8; --pale:#C9CED3; }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--forest); color:#fff;
+    font-family:'Figtree',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:40px 16px; line-height:1.5;
+  }
+  /* Same lockup as the site's navigation bar: the mark inherits the
+     wordmark's colour so the two are always one colour. */
+  /* The lockup is traced artwork; `color` only feeds its currentColor fill. */
+  .brand{ color:#fff; text-decoration:none; margin-bottom:48px; display:inline-flex; align-items:center }
+  .brand-lockup{ height:22px; width:auto; flex:0 0 auto; display:block; fill:currentColor }
+  .code{
+    font-family:'Montserrat',sans-serif; font-weight:500; font-size:.75rem; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--teal-lt); margin:0 0 18px;
+  }
+  /* Same serif the site uses for headings, so the 404 is not a different brand. */
+  h1{
+    font-family:'Source Serif 4',Georgia,serif;
+    font-size:clamp(1.875rem,5vw,2.75rem); font-weight:400; letter-spacing:-.01em;
+    line-height:1.1; margin:0 0 16px; max-width:18ch;
+  }
+  p{ color:var(--pale); margin:0 0 36px; max-width:46ch; font-size:1.0625rem }
+  .links{ display:flex; flex-wrap:wrap; gap:10px 28px; justify-content:center }
+  .links a{ color:var(--teal-lt); text-decoration:none; font-size:.9375rem; border-bottom:1px solid transparent; padding-bottom:2px }
+  .links a:hover,.links a:focus-visible{ color:#fff; border-bottom-color:currentColor }
+</style>
+</head>
+<body>
+  <a class="brand" href="/" aria-label="Elbridge — home">
+    <svg class="brand-lockup" viewBox="0 0 658.94 100" aria-hidden="true" focusable="false"><polygon points="0.00,0.00 107.04,0.00 107.04,17.15 0.00,59.68"/><polygon points="0.00,71.77 107.04,29.24 107.04,41.23 0.00,83.76"/><polygon points="0.00,95.96 107.04,53.42 107.04,100.00 0.00,100.00"/><path fill-rule="evenodd" d="M557.20 77.02C545.88 75.19 537.67 70.94 532.72 64.36C527.94 57.99 526.78 48.97 529.74 41.14C530.98 37.88 534.54 33.17 537.57 30.79C545.14 24.85 557.60 21.64 568.38 22.85C570.97 23.15 574.79 23.88 576.87 24.48C580.63 25.57 587.42 28.69 587.97 29.58C588.13 29.84 586.79 31.60 585.00 33.50C583.20 35.39 581.68 37.03 581.62 37.13C581.56 37.23 579.85 36.49 577.83 35.49C564.97 29.12 548.13 32.71 543.35 42.83C541.65 46.41 541.42 50.46 542.67 54.58C543.51 57.34 544.04 58.20 546.21 60.38C549.33 63.49 552.19 64.99 557.31 66.21C560.60 67.00 562.16 67.11 567.23 66.92C570.54 66.80 574.26 66.43 575.48 66.10L577.71 65.49L577.84 60.92L577.97 56.35L573.25 56.35L568.53 56.35L568.66 53.11L568.79 49.88L579.05 49.88L589.31 49.88L589.31 60.58L589.31 71.28L587.08 72.34C583.99 73.82 579.33 75.42 575.79 76.23C572.83 76.90 559.85 77.45 557.20 77.02ZM294.25 75.56L281.54 75.30L281.43 50.13C281.36 36.28 281.46 24.80 281.65 24.62C281.83 24.43 289.71 24.22 299.16 24.15C317.96 24.01 320.28 24.23 325.34 26.71C333.72 30.81 334.62 41.68 326.98 46.52L325.04 47.75L327.92 49.17C333.20 51.77 335.58 55.93 335.19 61.87C334.85 67.12 332.60 70.38 327.59 72.91C322.31 75.57 316.64 76.03 294.25 75.56ZM466.65 75.54L456.39 75.30L456.54 49.88C456.62 35.90 456.74 24.41 456.79 24.35C456.85 24.29 464.11 24.19 472.92 24.13C490.25 24.00 491.96 24.16 498.83 26.66C510.22 30.79 516.40 39.82 515.81 51.44C515.02 67.16 502.00 76.34 481.15 75.87C478.82 75.82 472.29 75.67 466.65 75.54ZM153.27 75.19C153.13 73.75 153.39 24.45 153.54 24.29C153.88 23.95 201.27 24.05 201.83 24.40C202.43 24.77 202.59 31.66 202.03 32.55C201.79 32.93 196.70 33.11 183.56 33.22C173.58 33.31 165.31 33.48 165.19 33.61C165.06 33.74 164.92 36.25 164.87 39.19L164.79 44.53L180.00 44.60C188.36 44.64 195.41 44.81 195.66 44.96C195.92 45.12 196.12 46.89 196.12 48.97C196.12 52.00 195.99 52.73 195.39 52.96C194.99 53.12 191.52 53.11 187.70 52.95C183.87 52.79 177.17 52.80 172.82 52.99L164.90 53.32L164.90 59.29L164.90 65.27L170.14 65.33C173.02 65.36 181.60 65.51 189.21 65.66L203.04 65.94L203.17 70.11C203.25 72.80 203.11 74.50 202.78 74.90C202.34 75.42 198.21 75.53 177.78 75.53C164.32 75.53 153.29 75.38 153.27 75.19ZM221.04 75.32C220.93 75.20 220.88 63.71 220.94 49.78L221.04 24.45L226.98 24.45L232.92 24.45L233.04 44.86L233.15 65.27L249.18 65.27C260.44 65.27 265.30 65.41 265.51 65.76C266.12 66.75 266.27 74.17 265.70 74.87C265.23 75.43 262.04 75.53 243.20 75.53C231.13 75.53 221.16 75.43 221.04 75.32ZM352.55 75.24C352.13 74.82 352.15 24.23 352.57 24.22C360.65 23.92 385.42 23.97 387.70 24.29C396.16 25.48 401.19 28.49 403.61 33.82C405.04 36.97 405.06 43.57 403.66 46.62C401.82 50.62 397.25 53.91 391.97 55.04C390.72 55.31 389.71 55.66 389.71 55.83C389.71 56.00 393.92 60.34 399.07 65.49C404.23 70.64 408.44 75.00 408.44 75.19C408.44 75.37 405.05 75.53 400.91 75.53L393.38 75.53L385.79 67.39C381.61 62.91 377.76 58.69 377.22 58.02L376.26 56.79L370.06 56.79L363.85 56.79L363.73 66.05L363.61 75.30L358.24 75.43C355.28 75.50 352.72 75.41 352.55 75.24ZM423.47 75.24C423.30 75.07 423.16 63.65 423.16 49.86C423.16 30.31 423.28 24.70 423.72 24.39C424.02 24.18 426.68 24.10 429.63 24.23L434.98 24.45L435.09 31.81C435.15 35.86 435.05 47.30 434.87 57.24L434.53 75.30L429.16 75.43C426.20 75.50 423.64 75.41 423.47 75.24ZM608.48 74.97C608.37 74.66 608.32 63.17 608.38 49.43L608.49 24.45L619.66 24.12C625.81 23.94 637.05 23.94 644.64 24.12L658.45 24.45L658.58 28.18C658.66 30.54 658.52 32.13 658.19 32.53C657.76 33.04 654.67 33.15 640.38 33.15C630.88 33.15 622.47 33.28 621.71 33.43L620.31 33.71L620.31 39.28L620.31 44.84L628.01 44.58C632.24 44.43 639.41 44.46 643.95 44.64L652.20 44.97L652.33 48.73C652.43 51.42 652.30 52.59 651.89 52.87C651.57 53.08 648.05 53.13 644.06 52.96C640.07 52.80 633.10 52.82 628.56 53.00L620.31 53.32L620.31 59.29L620.31 65.27L624.44 65.33C626.71 65.36 635.39 65.52 643.73 65.66L658.89 65.94L658.89 70.62L658.89 75.30L633.79 75.42C613.94 75.51 608.65 75.42 608.48 74.97ZM317.90 65.89C319.36 65.46 320.88 64.60 321.77 63.71C323.05 62.43 323.25 61.93 323.25 59.99C323.25 57.10 321.88 55.40 318.57 54.16C315.81 53.12 313.12 52.96 301.28 53.12L292.92 53.22L292.92 59.68L292.92 66.13L297.49 66.27C310.71 66.69 315.52 66.60 317.90 65.89ZM489.24 65.52C495.25 64.45 499.86 61.36 502.16 56.87C503.08 55.06 503.22 54.16 503.22 50.10C503.22 45.74 503.13 45.25 501.90 43.03C499.47 38.64 495.15 35.75 488.86 34.33C485.51 33.56 476.91 33.35 471.22 33.89L468.21 34.17L468.21 49.93L468.21 65.68L472.78 65.83C483.11 66.15 485.99 66.10 489.24 65.52ZM389.01 46.53C391.95 45.05 393.00 43.54 393.00 40.81C393.00 38.08 391.77 35.92 389.48 34.63C386.56 33.00 382.86 32.62 372.91 32.97L363.84 33.28L363.84 40.32C363.84 47.27 363.85 47.37 364.84 47.57C365.39 47.68 370.56 47.75 376.33 47.71C386.56 47.65 386.86 47.62 389.01 46.53ZM314.34 44.26C320.54 42.93 322.12 36.65 316.91 34.00C314.57 32.81 308.24 32.42 299.02 32.92L292.92 33.24L292.92 39.00L292.92 44.75L302.48 44.75C307.76 44.75 313.08 44.53 314.34 44.26Z"/></svg>
+  </a>
+  <p class="code">Error 404</p>
+  <h1>This page doesn&rsquo;t exist.</h1>
+  <p>The address may have changed, or the link that brought you here may be out of date.</p>
+  <nav class="links">
+    <a href="/">Home</a>
+    <a href="/financing">Financing</a>
+    <a href="/transactions">Transactions</a>
+    <a href="/investors">Investors</a>
+    <a href="/press">Press</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</body>
+</html>
